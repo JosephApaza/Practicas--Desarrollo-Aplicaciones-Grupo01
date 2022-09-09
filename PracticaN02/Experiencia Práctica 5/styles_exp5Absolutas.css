@@ -1,0 +1,16 @@
+p{
+    font-size: 45;
+    font-family: cursive;
+    color: blue;
+    line-height: 100%;
+    background-color: yellow;
+    width: 250px;
+    height: 95px;
+}
+ 
+.creditos {
+    background-color:teal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 189px;
+    height: 76px;
+    }
