@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.principal {
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+button {
+    color: whitesmoke;
+    background-color: gray;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+.caja1 {
+    background-color: black;
+    color: white;
+}
+.contenedor {
+    background-color: rgb(209, 206, 206);
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.caja2, .caja3, .caja4 {
+    background-color: whitesmoke;
+    color: black;
+    border: solid 1px grey;
+}
+.caja2 p, .caja3 p, .caja4 p {
+    margin: 40px;
+}
+@media screen and (max-width: 900px) {
+    .principal {
+        height: 300px;
+        margin: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .principal {
+        height: 350px;
+        margin: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor {
+        background-color: rgb(209, 206, 206);
+        gap: 10px;
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}

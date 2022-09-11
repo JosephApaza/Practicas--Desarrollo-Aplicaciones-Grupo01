@@ -1,0 +1,138 @@
+h1 {
+    border: solid 2px whitesmoke;
+    background-color:aquamarine;
+    margin: 5px;
+    max-width: auto;
+    height: 50px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+img {
+    max-width: 120px;
+    max-height: 120px;
+}
+.content {
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    grid-template-columns: 460px 140px;
+    grid-template-rows: 30% 70%;
+}
+.content div {
+    margin: 3px;
+    color: black;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+}
+.part1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.part1 h3 {
+    margin: 0px;
+}
+.part2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -2;
+    grid-row-end: -3;
+}
+.part1 p {
+    margin: 0px;
+}
+.part3 {
+    grid-column-start: -1;
+    grid-column-end: -2;
+    grid-row-start: -1;
+    grid-row-end: -2;
+}
+.content button {   
+    color: white;
+    background-color: black;
+    width: 140px;
+    height: 35px;
+}
+button:hover {
+    border: solid 2px red;
+    cursor: pointer;
+}
+.contenedor1 {
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+}
+.contenedor1 div  {
+    margin: 3px;
+    border: solid 2px gray;
+    background-color: rgb(189, 189, 189);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor1 div:hover{
+    border: solid 2px blue;
+}
+.hijo1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.hijo2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -6;
+    grid-row-end: -7;
+}
+.hijo3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -5;
+    grid-row-end: -6;
+}
+.hijo4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: -3;
+    grid-row-end: -5;
+}
+.hijo5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.hijo6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.hijo7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.hijo8 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -2;
+    grid-row-end: -3;
+}
+.hijo9 {
+    grid-column-start: -1;
+    grid-column-end: -2;
+    grid-row-start: -1;
+    grid-row-end: -2;
+}
