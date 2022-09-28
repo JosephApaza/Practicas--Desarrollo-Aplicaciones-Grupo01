@@ -1,0 +1,44 @@
+img {
+    max-height: 300px;
+    max-width: 300px;
+}
+.principal {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.container .btn {
+    border-radius: 30px;
+}
+@media screen and (max-width:375px) {
+    img {
+        max-height: 220px;
+        max-width: 220px;
+    }
+}
+@media screen and (max-width:414px) {
+    img {
+        max-height: 260px;
+        max-width: 260px;
+    }
+}
+@media screen and (max-width:400px) {
+    img {
+        max-height: 240px;
+        max-width: 240px;
+    }
+}
+@media screen and (max-width:360px) {
+    img {
+        max-height: 210px;
+        max-width: 210px;
+    }
+}
+@media screen and (max-width:320px) {
+    img {
+        max-height: 185px;
+        max-width: 185x;
+    }
+}

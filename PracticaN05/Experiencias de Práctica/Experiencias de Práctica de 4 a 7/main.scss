@@ -1,0 +1,293 @@
+$color-letra: white;
+$fondo-oscuro: rgb(25, 25, 25);
+$fondo-secundario: rgb(37, 37, 37);
+$borde: 1px solid gray;
+$espaciado: 10px;
+$color-url: rgb(144, 163, 199);
+
+
+@mixin tamanio-letra($value) {
+    @if ($value ==pequenia) {
+        font-size: 10px;
+    }
+
+    @else if ($value ==media) {
+        font-size: 15px;
+    }
+
+    @else if ($value ==grande) {
+        font-size: 20px;
+    }
+
+    @else if ($value ==gigante) {
+        font-size: 40px;
+    }
+}
+
+@mixin tamanio-imagen($value) {
+    @if ($value ==pequenia) {
+        width: 50px;
+        height: 50px;
+    }
+
+    @else if ($value ==media) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @else if ($value ==grande) {
+        width: 200px;
+        height: 200px;
+    }
+
+    @else if ($value ==gigante) {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $fondo-oscuro;
+    color: $color-letra;
+}
+
+.header {
+    background-color: $fondo-secundario;
+    padding: $espaciado;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    border-bottom: $borde;
+
+    .logo-nombre {
+        margin-left: $espaciado;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h1 {
+            margin-left: $espaciado;
+            margin-right: $espaciado;
+        }
+
+        .logo {
+            @include tamanio-imagen(pequenia);
+        }
+    }
+}
+
+.header .menu {
+    padding: $espaciado;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 20%;
+
+    a {
+        @include tamanio-letra(grande);
+        font-weight: bolder;
+        color: $color-url;
+        text-decoration: none;
+    }
+}
+
+.container {
+    margin-top: $espaciado*2;
+    padding: $espaciado;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    padding: $espaciado;
+    max-width: 100%;
+}
+
+.listado {
+    gap: $espaciado*3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        padding: $espaciado;
+        @include tamanio-imagen(gigante);
+    }
+
+    div {
+        max-width: 100%;
+        border: $borde;
+        border-radius: 10px;
+    }
+
+    div:hover {
+        cursor: pointer;
+        background-color: grey;
+    }
+
+    p {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+}
+
+
+
+.footer {
+    border-top: $borde;
+    padding: $espaciado;
+    background-color: $fondo-secundario;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100px;
+
+    .descripcion {
+        align-items: center;
+        margin-left: $espaciado;
+    }
+
+    .volumen {
+        padding: $espaciado;
+        margin-right: 10px;
+    }
+
+    .cancion {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    p {
+        @include tamanio-letra(media);
+
+    }
+
+    img {
+        @include tamanio-imagen(media);
+    }
+
+    a {
+        @include tamanio-letra(gigante);
+    }
+}
+
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 57%;
+    justify-content: space-between;
+
+
+}
+
+.reproduccion {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 200px;
+}
+
+@media screen and (max-width:768px) {
+    .logo-nombre {
+        justify-content: space-around;
+    }
+
+    .footer img {
+        @include tamanio-imagen(pequenia);
+    }
+
+    .listado img {
+        @include tamanio-imagen(grande);
+    }
+
+    .header .menu {
+        width: 100%;
+    }
+
+    .footer {
+        max-height: 150px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .logo-nombre {
+        justify-content: space-around;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .controles {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $espaciado;
+        padding: $espaciado;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .logo-nombre {
+        justify-content: space-around;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .controles {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $espaciado;
+        padding: $espaciado;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .logo-nombre {
+        justify-content: space-around;
+    }
+
+    .header .menu {
+        width: 100%;
+        border: $borde;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer a {
+        @include tamanio-letra(gigante);
+    }
+
+    input {
+        @include tamanio-letra(pequenio);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $espaciado;
+        padding: $espaciado;
+    }
+}

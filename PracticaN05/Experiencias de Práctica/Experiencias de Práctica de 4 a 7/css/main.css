@@ -1,0 +1,243 @@
+body {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+.header {
+  background-color: rgb(37, 37, 37);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.header .logo-nombre {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .logo-nombre h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header .logo-nombre .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header .menu {
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.header .menu a {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(144, 163, 199);
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.listado {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.listado img {
+  padding: 10px;
+  width: 290px;
+  height: 290px;
+}
+
+.listado div {
+  max-width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.listado div:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.listado p {
+  margin-top: 0;
+  margin-left: 50px;
+}
+
+.footer {
+  border-top: 1px solid gray;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100px;
+}
+
+.footer .descripcion {
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer .volumen {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.footer .cancion {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.footer img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer a {
+  font-size: 40px;
+}
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 57%;
+  justify-content: space-between;
+}
+
+.reproduccion {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-nombre {
+    justify-content: space-around;
+  }
+
+  .footer img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .listado img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .header .menu {
+    width: 100%;
+  }
+
+  .footer {
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo-nombre {
+    justify-content: space-around;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .controles {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-nombre {
+    justify-content: space-around;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .controles {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo-nombre {
+    justify-content: space-around;
+  }
+
+  .header .menu {
+    width: 100%;
+    border: 1px solid gray;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer a {
+    font-size: 40px;
+  }
+
+  input {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
